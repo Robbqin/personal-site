@@ -1,0 +1,277 @@
+﻿/***
+
+Author: Robbqin de Wildt
+Author site: http://www.robbindewildt.nl
+Project: HTML demo
+Description: HTML demo voor school.
+
+file: css/style.css
+
+***/
+
+
+
+/* 
+	
+	http://pxtoem.com/
+	0.375em = 6px
+	1.875em = 30px
+	3.75em  = 60px;
+	
+	
+	
+
+*/
+
+body {/* For more change the reset */
+	background: #D6D6D6;/* Background (might wanna change to an image) */
+	font-family: 'Lato', sans-serif;/* Lato is a google font (and i love it :3) */
+}
+
+
+/* Start Link styling */
+
+a {/* Global link styling (needs work) */
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* End Links styling */
+
+
+div#page {
+	width: 960px;/* Page width */
+	margin: 0 auto;/* Center the page div */
+}
+
+div.wrapper {/* Keeps it all toghetter */
+	overflow: auto;
+}
+
+div.clear {/* Clears the floaty sections and adds a nice 30px spacing */
+	clear: both;
+	height: 1.875em;
+}
+
+header.header {/* The header, navigation included */
+	margin-top: 1.875em;
+	background: #fff;
+	width: 960px;/* Same as the page */
+	height: 3.75em;
+	line-height: 3.75em;/* Same as the height for perfect vertical centering */
+	border-bottom: 3px solid #f00;
+}
+
+header.header > .wrapper {/* Making the .wrapper float :D */
+	float: left;
+}
+
+header.header > .wrapper > h1 {/* Say My Name! Not much going on here */
+	color: #000;
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-left: 0.75em;
+}
+
+
+/* Start navigation */
+header.header > nav.main_nav {/* The navigation is to the right in the header */
+	float: right;
+}
+
+nav.main_nav > ul.nav {/* basic horizontal nav */
+	display: inline-block;
+}
+
+ul.nav > li {/* ^^ */
+	float: left;/* Fly you fools! */
+	text-align: center;
+}
+
+ul.nav > li > a {
+	min-width: 5.5em;/* For a nice space between the links */
+	padding-left: 0.2em;/* padding also for the spacing */
+	padding-right: 0.2em;
+	display: block;
+	line-height: 3.75em;/* Height of the nav bar 60px*/
+	font-size: 1.1em;
+	text-decoration: none;/* Stupid lines */
+	text-transform: capitalize;/* Cuz im lazy and dont wanna capitalize everything */
+	text-shadow: 0px 0px 1px #f00;/* shadows :3 */
+}
+/* End navigation */
+
+
+
+
+
+/* start full width image app */
+section.image_fw {/* Don't change */
+	width: 950px;/* Page width - borders */
+	border: 5px solid #fff;
+	position: relative;
+}
+
+
+/* Actual images, yay */
+section.image_fw.header {/* Image at the top of the page */
+	height: 287px;/* Box size of image - borders */
+	margin-top: 1.875em;/* Becouse for some reason my clear div didnt work... :') */
+	background: url("../img/city_background.jpg") no-repeat 50% 90%;/* background url, no-repeat h-shift v-shift */
+	background-size: 100% auto;/* Image size */
+}
+
+section.image_fw.footer {/* Image at the bottom of the page */
+	height: 187px;/* Box size of image - borders */
+	background: url("../img/computer_background.jpg") no-repeat 50% 53%;/* background url, no-repeat h-shift v-shift */
+	background-size: 100% auto;/* Image size */
+}
+
+section.image_fw.one {/* a test image somewhere in the center */
+	height: 287px;/* Box size of image - borders */
+	background: url("../img/sunset_background.jpg") no-repeat 50% 80%;/* background url, no-repeat h-shift v-shift */
+	background-size: 100% auto;/* Image size */
+}
+
+div.quote {/* The text in the center, for local changes create new class */
+	width: 20em;/* Width of the white stripes (and text) */
+	height: 1.3em;/* 1.3em per line */
+	color: #fff;
+	font-size: 2em;/* 1em = 100%; 2em = 200% */
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;/* Needed for positioning */
+	text-align: center;
+	line-height: 1.3em; /* Same As Height */
+	border-top: 0.1em solid #fff;/* The white stripes */
+	border-bottom: 0.1em solid #fff;
+}
+
+div.quote > p > a {/* Styling the links in the quote if used */
+	color: #ffffff;/* White, just like the rest */
+	text-decoration: underline;
+}
+/* END full width images */
+
+
+
+/* Start structure */
+div.content_wrapper {/* sepperate wrapper for the content, not needed but oh well */
+	overflow: auto;
+	margin-top: 30px;
+}
+
+section.content_ws {/* content_ws (with sidebar) in the html it needs the left or right class */
+	width: 640px;
+	min-height: 150px;/* Test height, has to go at some point */
+	background: #fff;
+}
+
+section.content_ns {/* content_ns (no sidebar) */
+	width: 960px;/* A full page :D cuz no sidebar duh */
+	min-height: 150px;/* Test height, has to go at some point */
+	background: #fff;
+}
+
+aside.page_sidebar {/* sidebar, left or right class needed in the html */
+	width: 290px;
+	min-height: 150px;/* Test height, has to go at some point */
+	background: #fff;
+}
+
+.left {/* flys away */
+	float: left;
+}
+
+.right {
+	float: right;
+}
+/* End of page structure */
+
+
+
+
+/* Start article */
+article.content {/* Why is this here and why is this empty? */
+	padding: 0.375em;
+}
+
+article.content > header.content {
+	width: 100%;
+	height: 2.25em;
+	overflow: auto;
+	border-bottom: 2px solid #f00;
+}
+
+article.content > header.content > h1{
+	float: left;
+	color: #000;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 36px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+article.content > header.content > p {
+	float: right;
+	color: #000;
+	font-size: 0.8em;
+	line-height: 36px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+/* end article*/
+
+
+
+
+
+
+
+/* Start footer */
+footer.page_footer {
+	clear: both;/* Clears the floaty sections */
+	width: 960px;/* Could've done 100% here */
+	height: 60px;
+	margin-top: 30px;/* Makes for that beautiful spacing */
+	margin-bottom: 30px;/* /\ */
+	background: #fff;/* White is pretty global aint it? */
+	overflow: auto;
+	line-height: 60px;/* Same as the height */
+}
+
+footer.page_footer > p {/* For the copyright section of the footer */
+	float: left;
+	margin-left: 15px;/* Can't breath need some room */
+	font-size: 0.8em;/* Making it a bit smaller so it isn't so f-ing in your face */
+	font-style: italic;/* Why not right? */
+}
+
+footer.page_footer > div {/* for the social/contact links of the footer */
+	float: right;
+	margin-right: 5px;/* Make some space will ya */
+	overflow: auto;
+}
+
+p.social > a {
+	margin-left: 5px;/* Spreading out the links a bit */
+	margin-right: 5px;/* Just a tad */
+}
+
+p.social {
+	float: left;
+}
+
+.scrollToTop{
+	width: 36px;/* width of the image, same as height */
+	height: 36px;
+	margin: 12px 2px;/* Vertically centers the image */
+	opacity: 0.4;/* We need to be transparant dont we? */
+	float: right;/* flies away */
+	cursor: pointer;
+}

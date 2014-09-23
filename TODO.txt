@@ -1,0 +1,36 @@
+TODO
+	
+	- Figure out how to do the content
+	- Style the content
+	- Write some content
+	- New footer, bigger and more information. maybe have a smaller one for other pages?
+	- Make colums same height (where applies)
+	- Make the site responsive? maybe? anyone?
+	- The scrollToTop image isnt really in a good position, fix that maybe?
+	- Start converting everything to percentages, preperations for responsive
+	- maybe add a little logo or something in the header left of my name? only if time. and what kind of logo?
+	- Image app thing needs work, so I can use it for all images on the site, 1/4th of the page i.g.
+
+Responsive? 
+	- Media queries or what?
+	- What to do with the images?
+	- and how am i going to work with the bloody colums?
+	- Oh man implementing this is going to be a pain in the arse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
