@@ -1,0 +1,47 @@
+/* start full width image app */
+section.image_fw {/* Don't change */
+	width: 950px;/* Page width - borders */
+	border: 5px solid #fff;
+	position: relative;
+}
+
+
+/* Actual images, yay */
+section.image_fw.header {/* Image at the top of the page */
+	height: 287px;/* Box size of image - borders */
+	margin-top: 1.875em;/* Becouse for some reason my clear div didnt work... :') */
+	background: url("../img/city_background.jpg") no-repeat 50% 90%;/* background url, no-repeat h-shift v-shift */
+	background-size: 100% auto;/* Image size */
+}
+
+section.image_fw.footer {/* Image at the bottom of the page */
+	height: 187px;/* Box size of image - borders */
+	background: url("../img/computer_background.jpg") no-repeat 50% 53%;/* background url, no-repeat h-shift v-shift */
+	background-size: 100% auto;/* Image size */
+}
+
+section.image_fw.one {/* a test image somewhere in the center */
+	height: 287px;/* Box size of image - borders */
+	background: url("../img/sunset_background.jpg") no-repeat 50% 80%;/* background url, no-repeat h-shift v-shift */
+	background-size: 100% auto;/* Image size */
+}
+
+div.quote {/* The text in the center, for local changes create new class */
+	width: 20em;/* Width of the white stripes (and text) */
+	height: 1.3em;/* 1.3em per line */
+	color: #fff;
+	font-size: 2em;/* 1em = 100%; 2em = 200% */
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;/* Needed for positioning */
+	text-align: center;
+	line-height: 1.3em; /* Same As Height */
+	border-top: 0.1em solid #fff;/* The white stripes */
+	border-bottom: 0.1em solid #fff;
+}
+
+div.quote > p > a {/* Styling the links in the quote if used */
+	color: #ffffff;/* White, just like the rest */
+	text-decoration: underline;
+}
+/* END full width images */
