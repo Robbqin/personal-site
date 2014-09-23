@@ -67,15 +67,22 @@ header.header {/* The header, navigation included */
 
 header.header > .wrapper {/* Making the .wrapper float :D */
 	float: left;
+	width: 33%;
 }
 
-header.header > .wrapper > h1 {/* Say My Name! Not much going on here */
+header.header > .wrapper > a > h1 {/* Say My Name! Not much going on here */
 	color: #000;
 	font-size: 1.7em;
 	font-weight: bold;
 	margin-left: 0.75em;
 }
 
+svg.logo {
+	width: 36px;
+	height: 36px;
+	margin: 12px;
+	float: left;
+}
 
 /* Start navigation */
 .header > .main_nav {/* The navigation is to the right in the header */
@@ -94,9 +101,9 @@ header.header > .wrapper > h1 {/* Say My Name! Not much going on here */
 }
 
 .nav > .menu-item > a {
-	min-width: 5.5em;/* For a nice space between the links */
-	padding-left: 0.2em;/* padding also for the spacing */
-	padding-right: 0.2em;
+	min-width: 5em;/* For a nice space between the links */
+	padding-left: 0.1em;/* padding also for the spacing */
+	padding-right: 0.1em;
 	display: block;
 	line-height: 57px;/* Height of the nav bar 60px*/
 	font-size: 1.1em;
