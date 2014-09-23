@@ -1,8 +1,9 @@
 /* start full width image app */
 .image-fw {/* Don't change */
-	width: 950px;/* Page width - borders */
-	border: 5px solid #fff;
+	width: 960px;/* Page width - borders */
+	border: 5px solid #f05e2a;
 	position: relative;
+	box-sizing: border-box;
 }
 
 
