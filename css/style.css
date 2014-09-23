@@ -222,46 +222,54 @@ article.content > header.content > p {
 
 
 /* Start footer */
-footer.page_footer {
+.page-footer {
 	clear: both;/* Clears the floaty sections */
 	width: 960px;/* Could've done 100% here */
 	height: 60px;
-	margin-top: 30px;/* Makes for that beautiful spacing */
+	/*margin-top: 30px;/* Makes for that beautiful spacing */
 	margin-bottom: 30px;/* /\ */
-	background: #fff;/* White is pretty global aint it? */
-	overflow: auto;
-	line-height: 60px;/* Same as the height */
+	margin-top: 30px;
 }
 
-footer.page_footer > p {/* For the copyright section of the footer */
+.page-footer > .footer-social {
+	width: 960px;
+	height: 60px;
+	background: #f05e2a;
+	margin: 0 auto;
+}
+
+.social-icons {
 	float: left;
-	margin-left: 15px;/* Can't breath need some room */
-	font-size: 0.8em;/* Making it a bit smaller so it isn't so f-ing in your face */
-	font-style: italic;/* Why not right? */
+	margin-left: 3px;
 }
 
-footer.page_footer > div {/* for the social/contact links of the footer */
-	float: right;
-	margin-right: 5px;/* Make some space will ya */
-	overflow: auto;
+.social-icon {
+	width: 52px;
+	height: 52px;
+	margin: 4px;
+	margin-right: 0;
+	margin-left: 0;
 }
 
-p.social > a {
-	margin-left: 5px;/* Spreading out the links a bit */
-	margin-right: 5px;/* Just a tad */
+.social-icon:hover {
+	opacity: 0.5;
 }
 
-p.social {
-	float: left;
+.page-footer > .footer-main {
+	width: 100%;
+	height: 150px;
+	background: #3b3b3b;
 }
 
-.scrollToTop{
-	width: 36px;/* width of the image, same as height */
-	height: 36px;
-	margin: 12px 2px;/* Vertically centers the image */
-	opacity: 0.4;/* We need to be transparant dont we? */
-	float: right;/* flies away */
-	cursor: pointer;
+.page-footer > .copyright {
+	text-align: center;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	font-size: 0.6em;
+}
+
+.fade {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -269,6 +277,15 @@ p.social {
     transition: all 0.2s ease-in-out;
 }
 
+.scrollToTop{
+	width: 60px;/* width of the image, same as height */
+	height: 60px;
+	margin: 6px;
+	opacity: 0.7;/* We need to be transparant dont we? */
+	float: right;/* flies away */
+	cursor: pointer;
+}
+
 .scrollToTop:hover {
-	opacity: 0.6;
+	opacity: 0.5;
 }
