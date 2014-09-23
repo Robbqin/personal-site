@@ -131,24 +131,24 @@ svg.logo {
 
 
 /* Start structure */
-.content_wrapper {/* sepperate wrapper for the content, not needed but oh well */
+.content-wrapper {/* sepperate wrapper for the content, not needed but oh well */
 	overflow: auto;
 	margin-top: 30px;
 }
 
-.content_ws {/* content_ws (with sidebar) in the html it needs the left or right class */
+.content-ws {/* content_ws (with sidebar) in the html it needs the left or right class */
 	width: 640px;
 	min-height: 150px;/* Test height, has to go at some point */
 	background: #fff;
 }
 
-.content_ns {/* content_ns (no sidebar) */
+.content-ns {/* content_ns (no sidebar) */
 	width: 960px;/* A full page :D cuz no sidebar duh */
 	min-height: 150px;/* Test height, has to go at some point */
 	background: #fff;
 }
 
-.page_sidebar {/* sidebar, left or right class needed in the html */
+.page-sidebar {/* sidebar, left or right class needed in the html */
 	width: 290px;
 	min-height: 150px;/* Test height, has to go at some point */
 	background: #fff;

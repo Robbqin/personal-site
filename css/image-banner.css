@@ -1,5 +1,5 @@
 /* start full width image app */
-.image_fw {/* Don't change */
+.image-fw {/* Don't change */
 	width: 950px;/* Page width - borders */
 	border: 5px solid #fff;
 	position: relative;
@@ -7,20 +7,20 @@
 
 
 /* Actual images, yay */
-.image_fw.header {/* Image at the top of the page */
+.image-fw.header {/* Image at the top of the page */
 	height: 287px;/* Box size of image - borders */
 	margin-top: 1.875em;/* Becouse for some reason my clear div didnt work... :') */
 	background: url("../img/city_background.jpg") no-repeat 50% 90%;/* background url, no-repeat h-shift v-shift */
 	background-size: 100% auto;/* Image size */
 }
 
-.image_fw.footer {/* Image at the bottom of the page */
+.image-fw.footer {/* Image at the bottom of the page */
 	height: 187px;/* Box size of image - borders */
 	background: url("../img/computer_background.jpg") no-repeat 50% 53%;/* background url, no-repeat h-shift v-shift */
 	background-size: 100% auto;/* Image size */
 }
 
-.image_fw.one {/* a test image somewhere in the center */
+.image-fw.one {/* a test image somewhere in the center */
 	height: 287px;/* Box size of image - borders */
 	background: url("../img/sunset_background.jpg") no-repeat 50% 80%;/* background url, no-repeat h-shift v-shift */
 	background-size: 100% auto;/* Image size */
