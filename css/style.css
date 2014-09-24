@@ -52,6 +52,8 @@ a:hover {
 
 .wrapper {/* Keeps it all toghetter */
 	overflow: auto;
+	display: -webkit-flex;
+	display: -o-flex;
 	display: flex;
 }
 
@@ -180,6 +182,8 @@ svg.logo {
 }
 
 .fourth {
+	-webkit-flex: 1;
+	-o-flex: 1;
 	flex: 1;
 	height: auto;
 	margin-right: 30px;
@@ -280,6 +284,8 @@ article.content > header.content > p {
 	margin: 0;
 	overflow: auto;
 	position: relative;
+	display: -webkit-flex;
+	display: -o-flex;
 	display: flex;
 }
 

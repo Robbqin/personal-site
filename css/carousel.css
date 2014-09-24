@@ -1,5 +1,7 @@
 .wrapper-car {
 	width: 960px;
+	display: -webkit-flex;
+	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
 }
