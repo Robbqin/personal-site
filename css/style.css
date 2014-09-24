@@ -43,6 +43,8 @@ a:hover {
 /* End Links styling */
 
 
+
+
 #page {
 	width: 960px;/* Page width */
 	margin: 0 auto;/* Center the page div */
@@ -234,8 +236,7 @@ article.content > header.content > p {
 .page-footer {
 	clear: both;/* Clears the floaty sections */
 	width: 960px;/* Could've done 100% here */
-	height: 60px;
-	margin-bottom: 30px;/* /\ */
+	height: 210px;
 	margin-top: 30px;
 }
 
@@ -243,10 +244,10 @@ article.content > header.content > p {
 	width: 960px;
 	height: 60px;
 	background: #f05e2a;
-	margin: 0 auto;
 }
 
 .social-icons {
+	height: 60px;
 	float: left;
 	margin-left: 3px;
 }
@@ -265,8 +266,8 @@ article.content > header.content > p {
 }
 
 .page-footer > .footer-main {
-	width: 100%;
-	height: auto;
+	width: 960px;
+	height: 150px;
 	background: #3b3b3b;
 	padding: 0;
 	margin: 0;
@@ -279,7 +280,6 @@ article.content > header.content > p {
 	height: 150px;
 	float: left;
 	color: #fff;
-	box-sizing: border-box;
 }
 
 
@@ -292,8 +292,8 @@ article.content > header.content > p {
 }
 
 .scrollToTop{
-	width: 60px;/* width of the image, same as height */
-	height: 60px;
+	width: 46px;/* width of the image, same as height */
+	height: 46px;
 	margin: 6px;
 	float: right;/* flies away */
 	cursor: pointer;
