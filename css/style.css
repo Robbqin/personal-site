@@ -43,21 +43,23 @@ a:hover {
 /* End Links styling */
 
 
-div#page {
+
+
+#page {
 	width: 960px;/* Page width */
 	margin: 0 auto;/* Center the page div */
 }
 
-div.wrapper {/* Keeps it all toghetter */
+.wrapper {/* Keeps it all toghetter */
 	overflow: auto;
 }
 
-div.clear {/* Clears the floaty sections and adds a nice 30px spacing */
+.clear {/* Clears the floaty sections and adds a nice 30px spacing */
 	clear: both;
 	height: 1.875em;
 }
 
-header.header {/* The header, navigation included */
+.header {/* The header, navigation included */
 	margin-top: 1.875em;
 	background: #fff;
 	width: 960px;/* Same as the page */
@@ -65,12 +67,12 @@ header.header {/* The header, navigation included */
 	line-height: 3.75em;/* Same as the height for perfect vertical centering */
 }
 
-header.header > .wrapper {/* Making the .wrapper float :D */
+.header > .wrapper {/* Making the .wrapper float :D */
 	float: left;
 	width: 33%;
 }
 
-header.header > .wrapper > a > h1 {/* Say My Name! Not much going on here */
+.header > .wrapper > a > h1 {/* Say My Name! Not much going on here */
 	color: #000;
 	font-size: 1.7em;
 	font-weight: bold;
@@ -82,6 +84,14 @@ svg.logo {
 	height: 36px;
 	margin: 12px;
 	float: left;
+}
+
+.fade {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Start navigation */
@@ -156,10 +166,10 @@ svg.logo {
 
 .fourth {
 	width: 218px;
-	height: 150px;
+	height: auto;
 	background: #fff;
 	float: left;
-	margin-right: 30px;
+	margin-right: 29px;
 }
 
 .fourth.first {
@@ -169,6 +179,7 @@ svg.logo {
 .fourth.last {
 	width: 217px;
 	margin-right: 0;
+	float: right;
 }
 
 .left {/* flys away */
@@ -225,9 +236,7 @@ article.content > header.content > p {
 .page-footer {
 	clear: both;/* Clears the floaty sections */
 	width: 960px;/* Could've done 100% here */
-	height: 60px;
-	/*margin-top: 30px;/* Makes for that beautiful spacing */
-	margin-bottom: 30px;/* /\ */
+	height: 210px;
 	margin-top: 30px;
 }
 
@@ -235,10 +244,10 @@ article.content > header.content > p {
 	width: 960px;
 	height: 60px;
 	background: #f05e2a;
-	margin: 0 auto;
 }
 
 .social-icons {
+	height: 60px;
 	float: left;
 	margin-left: 3px;
 }
@@ -257,10 +266,22 @@ article.content > header.content > p {
 }
 
 .page-footer > .footer-main {
-	width: 100%;
+	width: 960px;
 	height: 150px;
 	background: #3b3b3b;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	position: relative;
 }
+
+.footer-main > .footer-third {
+	width: 320px;
+	height: 150px;
+	float: left;
+	color: #fff;
+}
+
 
 .page-footer > .copyright {
 	text-align: center;
@@ -270,23 +291,14 @@ article.content > header.content > p {
 	font-size: 0.6em;
 }
 
-.fade {
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
 .scrollToTop{
-	width: 60px;/* width of the image, same as height */
-	height: 60px;
+	width: 46px;/* width of the image, same as height */
+	height: 46px;
 	margin: 6px;
-	opacity: 0.7;/* We need to be transparant dont we? */
 	float: right;/* flies away */
 	cursor: pointer;
 }
 
 .scrollToTop:hover {
-	opacity: 0.5;
+	 opacity: 0.5;
 }

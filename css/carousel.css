@@ -1,0 +1,18 @@
+.carousel {
+	width: 100%;
+}
+
+.carousel.one {
+	height: 150px;
+	box-sizing: border-box;
+	border: 6px solid #fff;
+}
+
+.fourth > h1 {
+	font-size: 1.5em;
+	max-width: 218px;
+	margin: 6px;
+	margin-top: 0;
+	font-weight: bold;
+	font-family: 'Indie Flower', cursive;
+}
