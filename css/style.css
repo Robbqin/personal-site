@@ -61,10 +61,12 @@ a:hover {
 
 .header {/* The header, navigation included */
 	margin-top: 1.875em;
-	background: #fff;
 	width: 960px;/* Same as the page */
 	height: 3.75em;
 	line-height: 3.75em;/* Same as the height for perfect vertical centering */
+	background-image: -webkit-linear-gradient(#fff, #666);
+	background-image: -o-linear-gradient(#fff, #666);
+	background-image: linear-gradient(#fff, #666);
 }
 
 .header > .wrapper {/* Making the .wrapper float :D */
@@ -167,9 +169,11 @@ svg.logo {
 .fourth {
 	width: 218px;
 	height: auto;
-	background: #fff;
 	float: left;
 	margin-right: 29px;
+	background-image: -webkit-linear-gradient(#fff, #d7d7d7);
+	background-image: -o-linear-gradient(#fff, #d7d7d7);
+	background-image: linear-gradient(#fff, #d7d7d7);
 }
 
 .fourth.first {
@@ -243,7 +247,10 @@ article.content > header.content > p {
 .page-footer > .footer-social {
 	width: 960px;
 	height: 60px;
-	background: #f05e2a;
+	background: #cc6600;
+	background-image: -webkit-linear-gradient(#cc6600, #ff9900);
+	background-image: -o-linear-gradient(#cc6600, #ff9900);
+	background-image: linear-gradient(#cc6600, #ff9900);
 }
 
 .social-icons {

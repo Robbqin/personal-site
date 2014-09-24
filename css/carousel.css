@@ -5,7 +5,7 @@
 .carousel.one {
 	height: 150px;
 	box-sizing: border-box;
-	border: 6px solid #fff;
+	padding: 5px;
 }
 
 .fourth > h1 {
