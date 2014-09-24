@@ -84,6 +84,14 @@ svg.logo {
 	float: left;
 }
 
+.fade {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
 /* Start navigation */
 .header > .main_nav {/* The navigation is to the right in the header */
 	float: right;
@@ -156,10 +164,10 @@ svg.logo {
 
 .fourth {
 	width: 218px;
-	height: 150px;
+	height: auto;
 	background: #fff;
 	float: left;
-	margin-right: 30px;
+	margin-right: 29px;
 }
 
 .fourth.first {
@@ -169,6 +177,7 @@ svg.logo {
 .fourth.last {
 	width: 217px;
 	margin-right: 0;
+	float: right;
 }
 
 .left {/* flys away */
@@ -226,7 +235,6 @@ article.content > header.content > p {
 	clear: both;/* Clears the floaty sections */
 	width: 960px;/* Could've done 100% here */
 	height: 60px;
-	/*margin-top: 30px;/* Makes for that beautiful spacing */
 	margin-bottom: 30px;/* /\ */
 	margin-top: 30px;
 }
@@ -252,14 +260,28 @@ article.content > header.content > p {
 }
 
 .social-icon:hover {
-	opacity: 0.5;
+	fill: #fff;
+	opacity: 0.6;
 }
 
 .page-footer > .footer-main {
 	width: 100%;
-	height: 150px;
+	height: auto;
 	background: #3b3b3b;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	position: relative;
 }
+
+.footer-main > .footer-third {
+	width: 320px;
+	height: 150px;
+	float: left;
+	color: #fff;
+	box-sizing: border-box;
+}
+
 
 .page-footer > .copyright {
 	text-align: center;
@@ -269,23 +291,14 @@ article.content > header.content > p {
 	font-size: 0.6em;
 }
 
-.fade {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
 .scrollToTop{
 	width: 60px;/* width of the image, same as height */
 	height: 60px;
 	margin: 6px;
-	opacity: 0.7;/* We need to be transparant dont we? */
 	float: right;/* flies away */
 	cursor: pointer;
 }
 
 .scrollToTop:hover {
-	opacity: 0.5;
+	 opacity: 0.5;
 }
