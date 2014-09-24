@@ -291,17 +291,6 @@ article.content > header.content > p {
 	font-size: 0.6em;
 }
 
-<<<<<<< HEAD
-=======
-.fade {
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
->>>>>>> origin/master
 .scrollToTop{
 	width: 60px;/* width of the image, same as height */
 	height: 60px;
