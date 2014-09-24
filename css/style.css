@@ -280,6 +280,14 @@ article.content > header.content > p {
 	height: 150px;
 	float: left;
 	color: #fff;
+	box-sizing: border-box;
+	padding: 6px;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.footer-third.first {
+	border-left: 2px solid #000;
 }
 
 
