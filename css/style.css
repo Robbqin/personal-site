@@ -52,6 +52,7 @@ a:hover {
 
 .wrapper {/* Keeps it all toghetter */
 	overflow: auto;
+	display: flex;
 }
 
 .clear {/* Clears the floaty sections and adds a nice 30px spacing */
@@ -120,7 +121,7 @@ svg.logo {
 	line-height: 57px;/* Height of the nav bar 60px*/
 	font-size: 1.1em;
 	text-transform: capitalize;/* Cuz im lazy and dont wanna capitalize everything */
-	text-shadow: 0px 0px 1px #f05e2a;/* shadows :3 */
+	text-shadow: 0px 0px 1px #cc6600;/* shadows :3 */
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
@@ -129,7 +130,7 @@ svg.logo {
 }
 
 .menu-item > a:hover {
-	border-bottom: 3px solid #f05e2a;
+	border-bottom: 3px solid #cc6600;
 	text-decoration: none;/* Stupid lines */
 }
 /* End navigation */
@@ -149,9 +150,9 @@ svg.logo {
 }
 
 .content-ws {/* content_ws (with sidebar) in the html it needs the left or right class */
-	width: 640px;
 	min-height: 150px;/* Test height, has to go at some point */
 	background: #fff;
+	flex: 5;
 }
 
 .content-ns {/* content_ns (no sidebar) */
@@ -161,9 +162,17 @@ svg.logo {
 }
 
 .page-sidebar {/* sidebar, left or right class needed in the html */
-	width: 290px;
 	min-height: 150px;/* Test height, has to go at some point */
 	background: #fff;
+	flex: 2;
+}
+
+.content-ws.right {
+	margin-left: 30px;
+}
+
+.content-ws.left {
+	margin-right: 30px;
 }
 
 .fourth {
@@ -186,13 +195,6 @@ svg.logo {
 	float: right;
 }
 
-.left {/* flys away */
-	float: left;
-}
-
-.right {
-	float: right;
-}
 /* End of page structure */
 
 
@@ -280,10 +282,10 @@ article.content > header.content > p {
 	margin: 0;
 	overflow: auto;
 	position: relative;
+	display: flex;
 }
 
 .footer-main > .footer-third {
-	width: 320px;
 	height: 150px;
 	float: left;
 	color: #fff;
@@ -291,10 +293,9 @@ article.content > header.content > p {
 	padding: 6px;
 	border-right: 2px solid #000;
 	border-bottom: 2px solid #000;
-}
-
-.footer-third.first {
-	border-left: 2px solid #000;
+	-webkit-flex: 1;
+	-o-flex: 1;
+	flex: 1;
 }
 
 
