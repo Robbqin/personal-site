@@ -72,7 +72,6 @@ a:hover {
 
 .header > .wrapper {/* Making the .wrapper float :D */
 	float: left;
-	width: 33%;
 }
 
 .header > .wrapper > a > h1 {/* Say My Name! Not much going on here */
@@ -80,6 +79,7 @@ a:hover {
 	font-size: 1.7em;
 	font-weight: bold;
 	margin-left: 0.75em;
+	width: 320px;
 }
 
 svg.logo {
@@ -152,6 +152,8 @@ svg.logo {
 .content-ws {/* content_ws (with sidebar) in the html it needs the left or right class */
 	min-height: 150px;/* Test height, has to go at some point */
 	background: #fff;
+	-webkit-flex: 5;
+	-o-flex: 5;
 	flex: 5;
 }
 
@@ -164,6 +166,8 @@ svg.logo {
 .page-sidebar {/* sidebar, left or right class needed in the html */
 	min-height: 150px;/* Test height, has to go at some point */
 	background: #fff;
+	-webkit-flex: 2;
+	-o-flex: 2;
 	flex: 2;
 }
 
@@ -176,24 +180,18 @@ svg.logo {
 }
 
 .fourth {
-	width: 218px;
+	flex: 1;
 	height: auto;
-	float: left;
-	margin-right: 29px;
+	margin-right: 30px;
 	background-image: -webkit-linear-gradient(#fff, #d7d7d7);
 	background-image: -o-linear-gradient(#fff, #d7d7d7);
 	background-image: linear-gradient(#fff, #d7d7d7);
 }
 
-.fourth.first {
-	width: 217px;
+.fourth.last {
+	margin: 0;
 }
 
-.fourth.last {
-	width: 217px;
-	margin-right: 0;
-	float: right;
-}
 
 /* End of page structure */
 
@@ -296,6 +294,10 @@ article.content > header.content > p {
 	-webkit-flex: 1;
 	-o-flex: 1;
 	flex: 1;
+}
+
+.footer-third:nth-of-type(1) {
+	border-left: 2px solid #000;
 }
 
 

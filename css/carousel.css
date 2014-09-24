@@ -1,3 +1,9 @@
+.wrapper-car {
+	width: 960px;
+	display: flex;
+	justify-content: space-between;
+}
+
 .carousel {
 	width: 100%;
 }
