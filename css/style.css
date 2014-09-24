@@ -26,6 +26,7 @@ file: css/style.css
 body {/* For more change the reset */
 	background: #D6D6D6 url('../img/backgroundpattern.gif') repeat top left;/* Background (might wanna change to an image) */
 	font-family: 'Lato', sans-serif;/* Lato is a google font (and i love it :3) */
+	text-align: center;
 }
 
 
@@ -36,7 +37,7 @@ a {/* Global link styling (needs work) */
 	text-decoration: none;
 }
 
-a:hover {
+a:hover,a:focus {
 	text-decoration: underline;
 }
 
@@ -48,6 +49,7 @@ a:hover {
 #page {
 	width: 960px;/* Page width */
 	margin: 0 auto;/* Center the page div */
+	text-align: left;
 }
 
 .wrapper {/* Keeps it all toghetter */
@@ -131,7 +133,7 @@ svg.logo {
     transition: all 0.1s ease-in-out;
 }
 
-.menu-item > a:hover {
+.menu-item > a:hover,a:focus {
 	border-bottom: 3px solid #cc6600;
 	text-decoration: none;/* Stupid lines */
 }
