@@ -43,21 +43,21 @@ a:hover {
 /* End Links styling */
 
 
-div#page {
+#page {
 	width: 960px;/* Page width */
 	margin: 0 auto;/* Center the page div */
 }
 
-div.wrapper {/* Keeps it all toghetter */
+.wrapper {/* Keeps it all toghetter */
 	overflow: auto;
 }
 
-div.clear {/* Clears the floaty sections and adds a nice 30px spacing */
+.clear {/* Clears the floaty sections and adds a nice 30px spacing */
 	clear: both;
 	height: 1.875em;
 }
 
-header.header {/* The header, navigation included */
+.header {/* The header, navigation included */
 	margin-top: 1.875em;
 	background: #fff;
 	width: 960px;/* Same as the page */
@@ -65,12 +65,12 @@ header.header {/* The header, navigation included */
 	line-height: 3.75em;/* Same as the height for perfect vertical centering */
 }
 
-header.header > .wrapper {/* Making the .wrapper float :D */
+.header > .wrapper {/* Making the .wrapper float :D */
 	float: left;
 	width: 33%;
 }
 
-header.header > .wrapper > a > h1 {/* Say My Name! Not much going on here */
+.header > .wrapper > a > h1 {/* Say My Name! Not much going on here */
 	color: #000;
 	font-size: 1.7em;
 	font-weight: bold;
