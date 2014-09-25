@@ -200,7 +200,7 @@ svg.logo {
 	background-image: linear-gradient(#d7d7d7, #b7b7b7);
 }
 
-.fourth.last {
+.fourth:nth-last-of-type(1) {
 	margin: 0;
 }
 
