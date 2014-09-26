@@ -10,7 +10,7 @@
 /* Actual images, yay */
 .image-fw.header {/* Image at the top of the page */
 	height: 287px;/* Box size of image - borders */
-	margin-top: 1.875em;/* Becouse for some reason my clear div didnt work... :') */
+	margin-top: 20px;/* Becouse for some reason my clear div didnt work... :') */
 	background: url("../img/city_background.jpg") no-repeat 50% 90%;/* background url, no-repeat h-shift v-shift */
 	background-size: 100% auto;/* Image size */
 }

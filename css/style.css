@@ -61,7 +61,7 @@ a:hover,a:focus {
 
 .clear {/* Clears the floaty sections and adds a nice 30px spacing */
 	clear: both;
-	height: 1.875em;
+	height: 20px;
 }
 
 .header {/* The header, navigation included */
@@ -150,7 +150,7 @@ svg.logo {
 /* Start structure */
 .content-wrapper {/* sepperate wrapper for the content, not needed but oh well */
 	overflow: auto;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .content-ws {/* content_ws (with sidebar) in the html it needs the left or right class */
@@ -176,11 +176,11 @@ svg.logo {
 }
 
 .content-ws.right {
-	margin-left: 30px;
+	margin-left: 20px;
 }
 
 .content-ws.left {
-	margin-right: 30px;
+	margin-right: 20px;
 }
 
 .fourth {
@@ -188,7 +188,7 @@ svg.logo {
 	-o-flex: 1;
 	flex: 1;
 	height: auto;
-	margin-right: 30px;
+	margin-right: 20px;
 	background-image: -webkit-linear-gradient(#fff, #d7d7d7);
 	background-image: -o-linear-gradient(#fff, #d7d7d7);
 	background-image: linear-gradient(#fff, #d7d7d7);
@@ -253,7 +253,7 @@ article.content > header.content > p {
 	clear: both;/* Clears the floaty sections */
 	width: 960px;/* Could've done 100% here */
 	height: 210px;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .page-footer > .footer-social {
