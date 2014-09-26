@@ -24,7 +24,7 @@ file: css/style.css
 */
 
 body {/* For more change the reset */
-	background: #D6D6D6;/* Background (might wanna change to an image) */
+	background: #D6D6D6 url('../img/backgroundpattern.gif') repeat top left;/* Background (might wanna change to an image) */
 	font-family: 'Lato', sans-serif;/* Lato is a google font (and i love it :3) */
 	text-align: center;
 }
